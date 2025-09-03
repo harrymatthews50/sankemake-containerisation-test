@@ -3,7 +3,7 @@
 # https://snakemake.readthedocs.io/en/stable/snakefiles/best_practices.html,
 # in particular regarding the standardized folder structure mentioned there.
 
-
+containerized: "docker://harrymatthews50/my_workflow:latest"
 # load configuration
 # -----------------------------------------------------
 configfile: "config/config.yaml"
