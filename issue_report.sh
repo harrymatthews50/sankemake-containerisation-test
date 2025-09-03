@@ -91,5 +91,5 @@ RUN conda env create --prefix /conda-envs/fd1d6cdb3d8f52f0cf7524c1b190d1f7 --fil
 Which I then build
 
 ```
-docker build -t harrymatthews50/my_workflow:latest . --push
+docker buildx build --platform linux/amd64,linux/arm64 -t harrymatthews50/my_workflow:latest . --push
 ```
